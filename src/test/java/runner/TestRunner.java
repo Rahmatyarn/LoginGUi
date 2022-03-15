@@ -1,5 +1,6 @@
 package runner;
 
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
 import io.cucumber.java.After;
@@ -10,7 +11,7 @@ import utilities.CucumberReporting;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features = "classpath:features",
+		features = "C:\\Users\\15716\\eclipse-workspace\\com.tekschool.dealernaqib\\src\\text\\resources\\features\\Test.feature",
 		glue = "stepDefinitions",  // In glue we say where the step definition is located
 		tags = "@Test",   // 
 		dryRun = false,
@@ -26,7 +27,7 @@ import utilities.CucumberReporting;
 
 public class TestRunner {
 	
-	@After
+	@AfterClass
 	public static void generateReport() {
 		CucumberReporting.reportConfig();
 	}

@@ -1,7 +1,5 @@
 package stepDefinitions;
 
-import org.apache.log4j.Logger;
-
 import core.Base;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
